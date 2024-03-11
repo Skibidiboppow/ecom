@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import {  } from "../UI/Modal";
-import "./Header.css";
-import Modal from "../UI/Modal"
-export default function Header(){
-    const [showCart, setShowCart]= useState(false);
 
-    function openCart(){
-        setShowCart(true);
-    }
-    function closeCart(){
-        setShowCart(false);
-    }
+import "./Header.css";
+
+export default function Header({openCart}){
+    // const [showCart, setShowCart]= useState(false);
+
+    // function openCart(){
+    //     setShowCart(true);
+    // }
+    // function closeCart(){
+    //     setShowCart(false);
+    // }
     return (
         <header className="header">
             <h1>My React Store</h1>
@@ -21,7 +21,7 @@ export default function Header(){
                 Add Product</button>
                 <button className='yellow-button' onClick={openCart}>Cart</button>
             </div>
-            <Modal show={showCart} onClose={closeCart}> Hello from Cart</Modal>
+            
         </header>
     );
 }

@@ -1,10 +1,10 @@
 import React,{useState} from 'react';
-
 import Header from "./components/Header/Header";
 import Products from './components/Products/Products';
 import Cart from './components/Cart/Cart';
 
 function App() {
+  //Is it working
   const [showCart, setShowCart]= useState(false);
   const [cartItems,setCartItems] = useState([]);
   

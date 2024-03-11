@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import "./Header.css";
 
 export default function Header({openCart}){
-    // const [showCart, setShowCart]= useState(false);
 
-    // function openCart(){
-    //     setShowCart(true);
-    // }
-    // function closeCart(){
-    //     setShowCart(false);
-    // }
     return (
         <header className="header">
             <h1>My React Store</h1>

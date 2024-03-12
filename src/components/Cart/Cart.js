@@ -57,7 +57,6 @@ function Cart({showCart,closeCart,cartItems,onIncQuantity,onDecQuantity}){
             
         </div>
 
-
     </Modal>   
 }
 export default Cart;

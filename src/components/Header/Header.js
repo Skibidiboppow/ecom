@@ -2,7 +2,7 @@ import React from 'react';
 
 import "./Header.css";
 
-export default function Header({openCart}){
+export default function Header({openCart,openAddProduct}){
 
     return (
         <header className="header">
@@ -10,7 +10,8 @@ export default function Header({openCart}){
             <div>
                 <button 
                 className='yellow-button'
-                style={{marginRight: "20px"}}>
+                style={{marginRight: "20px"}}
+                onClick={openAddProduct}>
                 Add Product</button>
                 <button className='yellow-button' onClick={openCart}>Cart</button>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import productsData from "../../data/products.json"
+// import productsData from "../../data/products.json"
 import "./Products.css"
 
 function Product({ id, name, image,onAddToCart }) {
@@ -10,10 +10,10 @@ function Product({ id, name, image,onAddToCart }) {
 
     </div>);
 }
-function Products({ onAddToCart }) {
+function Products({ products,onAddToCart }) {
     return <div className="products-container">
         {
-            productsData.map(product => (
+            products.map(product => (
             <Product 
                 key={product.id} 
                 id={product.id} 
